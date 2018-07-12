@@ -9,7 +9,7 @@ function inOrder(currentNode) {
 }
 
 function findOrAdd(rootNode, newNode) {
-  if (rootNode.data === newNode.data) {
+  if (rootNode.data == newNode.data) {
     return true;
   }
   
