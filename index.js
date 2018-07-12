@@ -8,4 +8,10 @@ function inOrder(currentNode) {
   }
 }
 
-function findOrAdd()
+function findOrAdd(rootNode, newNode) {
+  if (rootNode === newNode) {
+    return rootNode;
+  } else if (newNode < rootNode) {
+    findOrAdd(rootNode.left);
+  } else if ()
+}
