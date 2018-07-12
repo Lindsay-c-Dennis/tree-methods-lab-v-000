@@ -29,6 +29,10 @@ function findOrAdd(rootNode, newNode) {
  }
 }
 
-function max(tree) {
-  
+function max(node) {
+  if (node.right) {
+    return max(node.right);
+  } else {
+    return node.data;
+  }
 }
